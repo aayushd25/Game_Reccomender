@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Reccomendation Engine</title
+    <link rel="stylesheet" type="text/css" href="texture.css">
+    <script type="text/javascript" src="games.js"></script>
 </head>
+
 <body>
-    <h1>Question List: Select the answer choice that most resonates with you for each of the questions!</h1>
-    <b1> Question 1: Which of the following words is most appealing to you? </b1>
+<form name="engine" id="engine">
+    <h1 style="font-family:Courier; color:rgb(149, 227, 24); font-size: 20px;"> Select the answer choice that most resonates with you for each of the following questions!</h1>
+    <div> 
+        <p> Question 1: Which of the following words is most appealing to you? </p>
+        <p><input type="radio" name="question1" value="Action">A. Action</p>
+        <p><input type="radio" name="question1" value="Adventure">B. Adventure</p>
+        <p><input type="radio" name="question1" value="Story">C. Story</p>
+    </div>
+
+    <div> 
+        <p>Question 2: You are walking at night and you hear a loud noise in a dark alley. You...</p>
+        <p><input type="radio" name="question2" value="Investigate the noise">A. Investigate the noise</p>
+        <p><input type="radio" name="question2" value="Run away">B. Run away</p>
+        <p><input type="radio" name="question2" value="Make a loud noise to scare away whatever is in the alley">C. Make a loud noise to scare away whatever is in the alley</p>
+    </div>
+
+    <div> 
+        <p>Question 3: If you had to watch one movie over and over again, what would it be? </p>
+        <p><input type="radio" name="question3" value="Avengers: Endgame">A. Avengers: Endgame</p>
+        <p><input type="radio" name="question3" value="The Dark Knight">B. The Dark Knight</p>
+        <p><input type="radio" name="question3" value="Harry Potter (any of the 8 movies)">C. Harry Potter (any of the 8 movies)</p>
+    </div>
+
+    <div> 
+        <p>Question 4: If you were to own a dog, what type of dog would it be? </p> 
+        <p><input type="radio" name="question4" value="Golden Retreiver">A. Golden Retreiver</p>
+        <p><input type="radio" name="question4" value="German Shepard">B. German Shepard</p>
+        <p><input type="radio" name="question4" value="Labradoodle">C. Labradoodle</p>
+    </div>
+
+    <div> 
+        <p>Question 5: If you had to choose a book to read, what genre would it be?</p>
+        <p><input type="radio" name="question5" value="Fiction">A. Fiction</p>
+        <p><input type="radio" name="question5" value="Non Fiction">B. Non Fiction</p>
+        <p><input type="radio" name="question5" value="Historical Fiction">C. Historical Fiction</p>
+    </div>
+
+    <div> 
+        <p>Question 6: Out of the following sports, which would you choose to play? </p>
+        <p><input type="radio" name="question6" value="Football">A. Football</p>
+        <p><input type="radio" name="question6" value="Tennis">B. Tennis</p>
+        <p><input type="radio" name="question6" value="Golf">C. Golf</p>
+    </div>
+
+    <script type = "text/javascript">
+        function message(){
+            document.write("Here is your list of games!");
+        }
+    </script>
+
+    <style>
+        body{background-color: rgb(146, 71, 71);}
+        h1{color: rgb(149, 227, 24);}
+        p{color: rgb(149, 227, 24);}
+    </style>
+
+    <input type="button" onclick="message()" value="Get my games!">
+</form>
 </body>
 </html>
